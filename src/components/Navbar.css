@@ -1,0 +1,51 @@
+.Navbar {
+  background-color: aliceblue;
+  padding: 16px;
+  text-align: center;
+}
+
+a {
+  font-size: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-family: BankGothic Lt BT;
+  color: rgba(128, 128, 128, 0.9);
+  position: relative;
+  padding-top: 10px;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: currentColor;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+a:hover::after {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-appearance: block;
+     -moz-appearance: block;
+          appearance: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+/*# sourceMappingURL=Navbar.css.map */
